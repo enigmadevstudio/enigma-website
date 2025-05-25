@@ -1,10 +1,10 @@
 ﻿:root {
-    --primary-color: #00a693; /* Persian Green */
-    --accent-color: #00ffff; /* Cyan */
-    --dark: #313131;
+    --primary-color: #006bff;
+    --accent-color: #63b7ff;
+    --dark: #2a2a2a;
     --light: #fff;
-    --gradient: linear-gradient(135deg, #00604c, #00a693);
-    --gradient-dark: linear-gradient(135deg, #313131, #003527);
+    --gradient: linear-gradient(135deg, #0008a7, #63b7ff);
+    --gradient-dark: linear-gradient(135deg, #000e7a, #2a0067);
 }
 
 
@@ -93,7 +93,7 @@ body {
 /* Sections */
 section {
     scroll-margin-top: 80px;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 section.dark{
@@ -200,28 +200,14 @@ p{
 
 /* Footer */
 .footer {
-    background: var(--dark);
+    background: var(--gradient-dark);
     color: var(--light);
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding:10px 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .service-boxes {
-        flex-direction: column;
-    }
-
-    .hero {
-        padding: 60px 20px;
-    }
+.footer p {
+    margin:20px 10px;
+    text-align:center;
 }
 
 /* Slider */
@@ -279,7 +265,6 @@ p{
     right: 5px;
 }
 
-
 /* Project Slider */
 .project-slider {
     display: flex;
@@ -331,10 +316,19 @@ p{
         flex-direction: column;
         gap: 15px;
         padding: 20px 0;
-    }
+        text-align: center;
+     }
 
     .nav.show {
         display: block;
+    }
+
+    .service-boxes {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 60px 20px;
     }
 }
 
