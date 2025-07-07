@@ -1,164 +1,341 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enigma Development Studio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Enigma Development Studio Website">
+    <meta name="keywords" content="Enigma, Studio, Development, Enigma Iran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENIGMA Development Studio</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
     <!-- Header -->
     <header class="header">
-        <div class="container nav-container">
-            <h1 class="logo">ENIGMA <span>DevStudio</span></h1>
-            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-            <nav class="nav" id="navbar">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="enigma logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Main</a></li>
+                                <li><a href="./Products.html">Products</a></li>
+                                <li><a href="./Blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="https://x.com/enidevstudio"><i class="fa fa-twitter"></i></a>
+                            <a href="https://instagram.com/enigmadevelopmentstudio"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@EnigmaDevStudio"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://github.com/enigmadevstudio"><i class="fa fa-github"></i></a>
+                            <a href="https://t.me/enigmadevelopmentstudio"><i class="fa fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
         </div>
     </header>
+    <!-- Header -->
 
-    <!-- Slider -->
-    <section class="slider" id="home">
-        <div class="slider-container">
-            <div class="slide active">
-                <a href="#" class="slide-link">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/slider/desktop-slider-1.png">
-                        <img src="images/slider/mobile-slider-1.png" alt="Slider image">
-                    </picture>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#" class="slide-link">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/slider/desktop-slider-2.png">
-                        <img src="images/slider/mobile-slider-2.png" alt="Slider image">
-                    </picture>
-                </a>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </div>
-    </section>
-
-    <!-- About Us -->
-    <section id="about" class="about dark">
-        <div class="container">
-            <h2>ABOUT US</h2>
-            <p>Enigma Development Studio is an independent, passionate, and ever-growing tech team that started its journey back in 2016.</p>
-            <p>It all began in high school, when Daniel Salehi and Reza Mahdipour decided to turn their curiosity into action — and build a team that breathes technology.</p>
-            <p>Since then, we’ve been learning, growing, and pushing boundaries across various tech domains.</p>
-        </div>
-    </section>
-
-    <!-- What We Do-->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>WHAT WE DO</h2>
-            <div class="service-boxes">
-                <div class="service">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Web Development (Front-End & Back-End)</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>UI/UX Design</h3>
-                    <p>Intuitive and elegant interfaces for users.</p>
-                </div>
-                <div class="service">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <h3>Video Game</h3>
-                    <p>Video Game Design & Development (2D).</p>
-                </div>
-                <div class="service">
-                    <i class="fa-brands fa-youtube"></i>
-                    <h3>Educational Content</h3>
-                    <p>Coming soon on our YouTube channel!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us -->
-    <section id="why-us" class="why-us dark">
-        <div class="container">
-            <h2>WHY ENIGMA ?</h2>
-            <p>We believe the world of computers is full of elegant mysteries — and we love to decode them. The name Enigma reflects our passion for solving complex problems with creativity and code.</p>
-        </div>
-    </section>
-
-    <!-- Projects-->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>OUR PROJECTS</h2>
-            <div class="project-slider">
-                <div class="project-card">
-                    <img src="images/projects/path-game.png" alt="Project 1" />
-                    <div class="info">
-                        <h3>The Path Game</h3>
-                        <p>Simple Game for challenging your mind</p>
-                    </div>
-                    <div class="project-button-wrapper">
-                        <a href="projects/path-game.html" class="project-button">View Project</a>
+    <!-- Hero -->
+    <section class="hero" id="Home">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/last-poster.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <h2>THE LAST</h2>
+                                <span>Coming soon ...</span>
+                                <!-- <a href="#" class="primary-btn">See more about us</a> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more project-card divs as needed -->
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/path-poster.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <h2>The Path</h2>
+                                <span>Available on markets</span>
+                                <!-- <a href="#" class="primary-btn">See more about us</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Hero -->
 
-    <!-- Social Media -->
-    <section id="contact" class="social-media dark">
+    <!-- About Us-->
+    <section class="about spad" id="About">
         <div class="container">
-            <h2>CONTACT US</h2>
-            <div class="social-grid">
-                <a href="https://instagram.com" target="_blank" class="social-card">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://t.me" target="_blank" class="social-card">
-                    <i class="fab fa-telegram"></i>
-                    <span>Telegram</span>
-                </a>
-                <a href="https://twitter.com" target="_blank" class="social-card">
-                    <i class="fab fa-x-twitter"></i>
-                    <span>X (Twitter)</span>
-                </a>
-                <a href="https://youtube.com" target="_blank" class="social-card">
-                    <i class="fab fa-youtube"></i>
-                    <span>YouTube</span>
-                </a>
-                <a href="https://github.com" target="_blank" class="social-card">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="about__pic__item about__pic__item--large set-bg"
+                                    data-setbg="img/main/hngsh-logo.jpg"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="about__pic__item about__pic__item--large set-bg"
+                                    data-setbg="img/main/enigma-logo.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <span>About ENIGMA</span>
+                            <h2>WHo we are?</h2>
+                        </div>
+                        <div class="about__text__desc">
+                            <p>Enigma Development Studio is an independent, passionate, and ever-growing tech team that
+                                started its journey back in 2016.</p>
+                        </div>
+                        <div class="about__text__desc">
+                            <p>It all began in high school, when Daniel Salehi and Reza Mahdipour decided to turn their
+                                curiosity into action — and build a team that breathes technology.
+                                Since then, we’ve been learning, growing, and pushing boundaries across various tech
+                                domains.
+                            </p>
+                        </div>
+                        <div class="about__text__desc">
+                            <p>We believe the world of computers is full of elegant mysteries — and we love to decode
+                                them.
+                                The name Enigma reflects our passion for solving complex problems with creativity and
+                                code.</p>
+                        </div>
+                        <div class="about__text__desc">
+                            <p>Currently, Enigma Studio continues its activities under the supervision of the "Hooshmand
+                                Novin Gostar Shahrad" Company for its formalization and development.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- About Us-->
+
+    <!-- Call To Action -->
+    <section class="callto spad set-bg" data-setbg="img/main/products-ps.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>OUR PRODUCTS</h2>
+                        <p>You can view our products and latest games/apps here </p>
+                        <a href="./products.html">PRODUCTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action -->
+
+    <!-- Services -->
+    <section class="services spad" id="Work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Enigma Development Studio</span>
+                            <h2>What We do?</h2>
+                        </div>
+                        <p>We specialize in multiple fields and are committed to delivering quality, creativity, and
+                            clean solutions in every project:</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-1.png" alt="">
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>Develope full website from zero . Frontend / Backend </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>Video Game</h4>
+                                <p>Create 2D Game with Unity and C# Programming Language . Also we are able to design
+                                    level and create different graphic styles for games .
+                                    It's our specials . </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-3.png" alt="">
+                                </div>
+                                <h4>UI / UX</h4>
+                                <p>Responsive UI / UX of any project are easy to us . we made it on FIGMA . </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-2.png" alt="">
+                                </div>
+                                <h4>Educational Content</h4>
+                                <p>We are currently working on our educational system and it will soon be available to
+                                    you on various platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+
+    <!-- Call To Action -->
+    <section class="callto spad set-bg" data-setbg="img/main/github-ps.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>OUR GITHUB PAGE</h2>
+                        <p>You can view our latest free source <br> code on Enigma Development Studio GitHub.</p>
+                        <a href="https://github.com/enigmadevstudio">GITHUB</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action -->
+
+    <!-- Contact-->
+    <section class="contact-widget spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-telegram"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <a href="https://t.me/enigmadevelopmentstudio">
+                                <h4>Telegram</h4>
+                            </a>
+                            <p>@enigmadevelopmentstudio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-google"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <a href="mailto:enigmadevelopmentstudio@gmail.com">
+                                <h4>Email</h4>
+                            </a>
+                            <p>enigmadevelopmentstudio@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <a href="https://instagram.com/enigmadevelopmentstudio">
+                                <h4>Instagram</h4>
+                            </a>
+                            <p>@enigmadevelopmentstudio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
 
     <!-- Footer -->
-    <section id="footer" class="footer">
+    <footer class="footer">
         <div class="container">
-            <p>
-                &copy; 2025 Enigma Development Studio. All rights reserved.
-            </p>
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="https://x.com/enidevstudio"><i class="fa fa-twitter"></i></a>
+                            <a href="https://instagram.com/enigmadevelopmentstudio"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@EnigmaDevStudio"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://github.com/enigmadevstudio"><i class="fa fa-github"></i></a>
+                            <a href="https://t.me/enigmadevelopmentstudio"><i class="fa fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer__copyright__text">Copyright &copy;
+                            2025 Enigma Development Studio. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
+    <!-- Footer -->
 
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
